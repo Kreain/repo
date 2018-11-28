@@ -24,6 +24,7 @@ string  ask_commit(void)
     printf("Enter commit message:\n");
     fgets(message, MSG_SIZE, stdin);
     size = strlen(message);
+    printf("size of commit : %i\n", size);
     message[size - 1] = '\0';
     return (message);
 }
