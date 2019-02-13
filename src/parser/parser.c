@@ -88,6 +88,7 @@ kv  parser(void)
         keys[i] = set_key_value(line);
         i++;
     }
+    free(line);
     fclose(config);
     free(filepath);
     return (keys);
