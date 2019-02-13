@@ -70,6 +70,7 @@ void    repo_list_dir(string repo)
             size++;
         }
     }
+    free(line);
     pclose(file);
     sort_alpha(repos, size);
     if (repo != NULL)
